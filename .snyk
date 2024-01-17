@@ -1,0 +1,26 @@
+custom_rules:
+  - id: FlowBlot Taint
+    description: Testing the taint flows.
+    severity: medium
+    cwe:
+      - CWE-123
+    fix_analysis: Checking the flow
+    rule_code: |-
+      Taint<CallExpression<"Source">, PRED:None, Arg1In<"Sink">>
+    languages:
+      - apex
+      - c
+      - cpp
+      - csharp
+      - go
+      - html
+      - java
+      - javascript
+      - kotlin
+      - php
+      - python
+      - ruby
+      - scala
+      - swift
+      - typescript
+      - vb
